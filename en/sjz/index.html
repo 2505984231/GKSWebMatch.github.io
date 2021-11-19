@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="de-DE" class="no-js">
+	<head>
+		<meta charset="gbk">
+		<meta name="robots" content="noindex">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel='stylesheet' href='css/history.css' type='text/css' media='all' />
+
+		<script type='text/javascript' src="js/jquery.min.js"></script>
+		<script type='text/javascript' src='js/lodash.js'></script>
+		<script type='text/javascript' src='js/TweenMax.min.js'></script>
+		<script type='text/javascript' src='js/DrawSVGPlugin.js'></script>
+		<script type='text/javascript' src='js/namespaces.js'></script>
+
+		<style type="text/css">
+			.site-content {
+				width: 128%;
+				margin: -50px auto;
+			}
+
+			@media screen and (max-width:1200px) {
+				.site-content {
+					width: 128%;
+					margin: -50px auto;
+				}
+				.chapter-headline{
+					font-size:50px;
+					
+				}
+				p.s-text, .wysiwyg ul.s-text, .maps-list-item .openhours p, .maps-list-item .openhours .wysiwyg ul, .wysiwyg .maps-list-item .openhours ul{
+					font-size:12px;
+					
+				}
+			}
+
+			@media screen and (max-width:767px) {
+				.site-content {
+					width: 128%;
+					margin: -50px auto;
+					margin-left: -55px;
+				}
+				.chapter-headline{
+					font-size:35px;
+					
+				}
+				p.s-text, .wysiwyg ul.s-text, .maps-list-item .openhours p, .maps-list-item .openhours .wysiwyg ul, .wysiwyg .maps-list-item .openhours ul{
+					font-size:14px;
+					
+				}
+			}
+
+			@media screen and (max-width:479px) {
+				.site-content {
+					width: 120%;
+					
+				}
+				
+				.chapter-headline{
+					font-size:18px;
+					
+				}
+				.wysiwyg ul.s-text, .maps-list-item .openhours p, .maps-list-item .openhours .wysiwyg ul, .wysiwyg .maps-list-item .openhours ul{
+				font-size:12px;
+				
+				}
+			}
+		</style>
+		<script type="text/javascript">
+			function preload_images(images, functions) {
+				if (typeof functions === 'undefined') functions = {};
+				var loaded = 0;
+				for (var i = 0; i < images.length; i++) {
+					////console.log('preload '+images[i]);
+					var img = new Image();
+					img.onload = img.onerror = function() {
+						////console.log(img.src + ' loaded');
+						var onImgParams = {
+							//img : img,
+							//index : i,
+							loadedPct: (loaded / images.length)
+						};
+						if (_.isFunction(functions.onImgLoad)) functions.onImgLoad(onImgParams);
+
+						loaded++;
+						if (loaded >= images.length && _.isFunction(functions.onAllImgsLoaded)) {
+							////console.log('all imgs loaded');
+							functions.onAllImgsLoaded()
+						}
+					};
+					img.src = images[i];
+				} // endfor
+			} // preload_images()
+		</script>
+	</head>
+
+	<body>
+		<div id="page" class="site">
+			<div id="content" class="site-content">
+				<div class="content-block history">
+					<div class="content-wrap small-wrap vert-spaced lined">
+						<div class="columns">
+							<div class="col third middled copy-col onScrollEnter">
+								<h3 class="chapter-headline">1928</h3>
+								<p class="chapter-copy s-text top-spaced">The first private aviation school in China was established. </p>
+							</div>
+							<!-- .col -->
+							<div class="col two-thirds middled ui-col rel onScrollEnter">
+								<div class="chapter-image img imgfill" style="background-image:url('images/FOTO1.jpg');"></div>
+								<div class="timeline-container circle-timelines">
+									<div class="fill-parent ui-timelines">
+										<svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;"
+										 xml:space="preserve">
+											<circle fill="none" stroke="#000000" stroke-miterlimit="10" cx="300" cy="300" r="300" />
+										</svg>
+										<svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;"
+										 xml:space="preserve">
+											<circle fill="none" stroke="#000000" stroke-miterlimit="10" cx="300" cy="300" r="300" />
+										</svg>
+									</div>
+									<!-- .ui-timelines -->
+									<div class="ui-chapters fill-parent">
+										<div class="ui-chapter current-chapter"> <span class="chapter-point"></span> <span class="chapter-label">2003</span>
+										</div>
+										<div class="ui-chapter"> <span class="chapter-point"></span> <span class="chapter-label">2004</span> </div>
+										<div class="ui-chapter"> <span class="chapter-point"></span> <span class="chapter-label">2005</span> </div>
+										<div class="ui-chapter"> <span class="chapter-point"></span> <span class="chapter-label">2006</span> </div>
+										<div class="ui-chapter"> <span class="chapter-point"></span> <span class="chapter-label">2007</span> </div>
+										<div class="ui-chapter"> <span class="chapter-point"></span> <span class="chapter-label">2008</span> </div>
+										<div class="ui-chapter"> <span class="chapter-point"></span> <span class="chapter-label">2009</span> </div>
+										<div class="ui-chapter"> <span class="chapter-point"></span> <span class="chapter-label">2010</span> </div>
+										<div class="ui-chapter"> <span class="chapter-point"></span> <span class="chapter-label">2011</span> </div>
+										<div class="ui-chapter"> <span class="chapter-point"></span> <span class="chapter-label">2012</span> </div>
+										<div class="ui-chapter"> <span class="chapter-point"></span> <span class="chapter-label">2013</span> </div>
+										<div class="ui-chapter"> <span class="chapter-point"></span> <span class="chapter-label">2014</span> </div>
+										<div class="ui-chapter"> <span class="chapter-point"></span> <span class="chapter-label">2015</span> </div>
+										<div class="ui-chapter"> <span class="chapter-point"></span> <span class="chapter-label">2016</span> </div>
+										<div class="ui-chapter"> <span class="chapter-point"></span> <span class="chapter-label">2017</span> </div>
+										<div class="ui-chapter"> <span class="chapter-point"></span> <span class="chapter-label">2018</span> </div>
+										<div class="ui-chapter"> <span class="chapter-point"></span> <span class="chapter-label">2019</span> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<script type='text/javascript' src='js/history.js'></script>
+		<script type='text/javascript'>
+			/* <![CDATA[ */
+
+
+			var _history_data = [
+
+				{
+					"title": "1928",
+					"copy": "The first private aviation school in China was established.",
+					"img": {
+						"src": "images\/1940-1000x668.jpg"
+					}
+				},
+				{
+					"title": "1936",
+					"copy": "China's first self-made wind tunnel was tested for the first time.",
+					"img": {
+						"src": "images\/1942-1000x670.jpg"
+					}
+				},
+				{
+					"title": "1950",
+					"copy": "China's first aviation unit - the fourth mixed brigade was established in Nanjing",
+					"img": {
+						"src": "images\/FOTO2-1000x677.jpg"
+					}
+				},
+				{
+					"title": "1951",
+					"copy": "Aviation Industry Bureau established in Shenyang",
+					"img": {
+						"src": "images\/1963.jpg"
+					}
+				},
+				{
+					"title": "1954",
+					"copy": "The Nanchang Aircraft Factory successfully produced the Jacques-18 trainer.",
+					"img": {
+						"src": "images\/Foto5-1000x608.jpg"
+					}
+				},
+				{
+					"title": "1956",
+					"copy": "The Shenyang Aircraft Factory successfully produced the first jet fighter, the MiG-17.",
+					"img": {
+						"src": "images\/foto6-1000x625.jpg"
+					}
+				},
+				{
+					"title": "1958",
+					"copy": "China’s self-designed and manufactured jet trainer made its first flight.",
+					"img": {
+						"src": "images\/foto8-1000x682.jpg"
+					}
+				},
+				{
+					"title": "1959",
+					"copy": "The MiG-19 fighter jet made by Shenyang Aircraft Factory made its first flight",
+					"img": {
+						"src": "images\/foto9-1000x533.jpg"
+					}
+				},
+				{
+					"title": "1964",
+					"copy": "The H-5 aircraft was successfully trial-produced at the Harbin Aircraft Factory.",
+					"img": {
+						"src": "images\/foto10-1000x563.jpg"
+					}
+				},
+				{
+					"title": "1966",
+					"copy": "The domestic J-7 aircraft successfully tested for the first time.",
+					"img": {
+						"src": "images\/foto11-1000x667.jpg"
+					}
+				},
+				{
+					"title": "1979",
+					"copy": "China's self-developed high-altitude high-speed fighters are designed and finalized.",
+					"img": {
+						"src": "images\/2007-1000x801.jpg"
+					}
+				},
+				{
+					"title": "1984",
+					"copy": "High-performance fighter J-8II aircraft successfully flew for the first time",
+					"img": {
+						"src": "images\/foto13_alternativehs_2009-1000x584.jpg"
+					}
+				},
+				{
+					"title": "1992",
+					"copy": "The domestic straight-9 helicopter made its first flight successfully",
+					"img": {
+						"src": "images\/FOTO1.jpg"
+					}
+				},
+				{
+					"title": "2011",
+					"copy": "J-20 first flight successfully",
+					"img": {
+						"src": "images\/foto14_AlternativeHair2011_Bundy_Bundy_ABH_9185-1000x665.jpg"
+					}
+				},
+				{
+					"title": "2013",
+					"copy": "China's independent strategic transport aircraft - 20 first flight success",
+					"img": {
+						"src": "images\/foto16-1000x602.jpg"
+					}
+				},
+				{
+					"title": "2017",
+					"copy": "The C919 large passenger plane made its first flight.",
+					"img": {
+						"src": "images\/foto17jpg-1000x667.jpg"
+					}
+				},
+				{
+					"title": "2018",
+					"copy": "The domestic amphibious aircraft Jilong AG600 successfully took off and landed on the water.",
+					"img": {
+						"src": "images\/foto15.jpg"
+					}
+				}
+			];
+			/* ]]> */
+		</script>
+		<script type='text/javascript' src='js/page_about.js'></script>
+	</body>
+</html>
